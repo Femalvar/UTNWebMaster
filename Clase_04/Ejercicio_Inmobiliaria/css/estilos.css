@@ -1,12 +1,21 @@
-/* *{
+/*Reset CSS*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+*{
     margin:0;
     padding:0;
-} */
+}
 
-#contendor{
+#contenedor{
+    width: 80%;
+    max-width: 980px;
     margin-left: auto;
     margin-right: auto;
-    width: 670px;
+    margin-top: 10px;
     border: 2px solid black;
     padding: 16px;
 }
@@ -16,6 +25,10 @@
     height: 110px;
     padding-top: 3px;
     padding-bottom: 4px;
+}
+
+p{
+    margin: 10px 0;
 }
 
 #principal{
@@ -34,11 +47,12 @@
 }
 
 #footer{
-    margin-top: 0px;
+    margin-top: 16px;
     padding-top: 0px;
     text-align: right;
+    font-family: 'Times New Roman', Times, serif;
     /* overflow: hidden; */
     background-image: url("../img/banner1.jpg");
-    background-repeat: repeat-x;
+    /* background-repeat: repeat-x; */
     height: 70px;
 }
