@@ -1,0 +1,104 @@
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0px; 
+    margin: 0px;
+}
+
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1,5em;
+}
+
+.contenedor{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Dentro del HEADER */
+header{
+    background: #3573d6;
+    height: 90px;
+    
+}
+
+.image_header{
+    width: 12%;
+    min-width: 74px;
+    margin: 8px;
+}
+/* Dentro del HEADER */
+
+/* Dentro del NAV */
+nav{
+    background: #1f3354;
+    margin-top: 10px;
+    padding: 1px;
+    padding-right: 20px;
+    text-align: right;
+    color: white;
+}
+/* Dentro del NAV */
+
+/* Dentro del MAIN */
+
+main{
+    float: left;
+    margin-right: 10px;
+    padding: 20px;
+    background: #666666;
+    width: 70%;
+}
+
+article{
+    /* background: tomato; */
+    padding-bottom: 10px; 
+}
+
+section{
+    overflow: auto;
+    width: 40%;
+    background: white;
+    padding: 20px;
+}
+
+.imagen{
+    width: 100%;
+}
+
+.float-der{
+    float: right;
+}
+.float-izq{
+    float: left;
+}
+
+.section_destacada{
+    width: fit-content;
+}
+/* Dentro del MAIN */
+
+/* ASIDE */
+aside{
+    background: rgb(177, 177, 177);
+    padding: 10px;
+}
+/* ASIDE */
+
+/* FOOTER */
+footer{
+    width: 100%;
+    float: right;
+    float: inline-end;
+    background: #94b4e7;
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+/* FOOTER */
