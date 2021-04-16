@@ -69,7 +69,8 @@ a{
 
 .banner{
     width: 20%;
-    background: #aaaaaa;
+    /* background: #aaaaaa; */
+    background: white;
     padding: 2%;
     float: right;
     height: 90vh;
