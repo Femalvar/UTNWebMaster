@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta Float en Clase</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <main id="contenedor">
+
+            <header class="header">
+                <div class="logo">
+                    <a href="index.html" title="Go Home">
+                    <h1>UTN</h1>
+                </a>
+                </div>
+            </header>
+
+            <nav class="navbar">
+                <!-- menu de navegacion con una lista -->
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">NOTICIAS</a>
+                    </li>
+                    <!-- <ul>
+                        <li>
+                            <a href="">NOTICIAS IMPORTANTES</a>
+                        </li>
+                        <li>
+                            <a href="">NOTICIAS SECUNDARIAS</a>
+                        </li>
+                    </ul> -->
+                    <li>
+                        <a href="">CONTACTO</a>
+                    </li>
+                </ul>
+              
+            </nav>
+
+            <section class="principal">
+
+                <h2>Contacto</h2>
+
+                <form action="mailto:alvarezfedericomanuel@gmail.com" method="POST" id="formContacto" target="_blank">
+                    <div>
+                        <label>
+                            <span>Nombre</span>
+                            <br>
+                            <input type="text" name="nombre" placeholder="Su nombre" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <span>Email</span>
+                            <br>
+                            <input type="text" name="email" placeholder="Su E-mail" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <span>Localidad</span>
+                        <br>
+                        <select name="localidad" id="" title="Seleccione una localidad" required>
+                            <option value="cp1298">Avellaneda</option>
+                            <option value="cp2548">Quilmes</option>
+                            <option value="cp1878">Berazategui</option>
+                            <option value="cp1958">La Plata</option>
+                            <option selected>Seleccione</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <span>Genero</span>
+                        <br>
+                        <input type="radio" name="genero" value="femenino">Femenino
+                        <input type="radio" name="genero" value="masculino">Masculino
+                        <input type="radio" name="genero" value="otro">Otro
+                        
+                    </div>
+
+                    <div>
+                        <label>
+                            <span>Comentario</span>
+                            <br>
+                            <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribi tus comentarios"></textarea>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="suscripcion" value="true">
+                            <span>Acepto terminos y condiciones</span>
+                            
+                        </label>
+                    </div>
+
+
+                    <!-- cualquiera de estas 2 maneras de submit funcionan -->
+                    <input type="submit" value="Enviar">
+                    <!-- <button type="submit">Enviar</button>s -->
+
+                </form>
+
+
+            </section>
+
+            <aside class="banner">
+                <!-- Cotenido a un costado de menor importancias..ejemp banners -->
+                <iframe id="banner" title="BannerAside" width="160" height="600" style="border:none" src="Banner/index.html">
+            </iframe>
+
+            </aside>
+
+            <footer class="footer">
+                <p>
+                    © 2017 - Todos los derechos reservados
+                    Desarrollado por <a href="#">YO</a>
+
+                </p>
+            </footer>
+
+        </main>
+    </header>
+    
+</body>
+</html>

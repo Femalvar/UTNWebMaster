@@ -1,0 +1,171 @@
+
+/* modelo de caja: el ancho de los elementos de bloque se da por el width + padding + border
+la propiedad box-sizing arregla esta suma, liberando todo el ancho con with
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#contenedor{
+    width: 90%;
+    max-width: 980px;
+    margin:0 auto;     /* atajo -> margin:top-botttom left-righ */
+}
+
+.header{
+    /* todos los elementos de bloque se estiran al maximo ancho disponible. (100%) */
+    /* width: 100%; */
+    color: white;
+    background: #3573d6;
+    padding: 2%;
+    margin-bottom: 12px;
+    
+}
+
+.navbar{
+    background: #1f3354;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+    text-align: right;
+    }
+    /* menu principal */
+    .navbar ul{
+        /* le sacamo todos los estilos x defauld a las listas */
+        list-style-type: none;
+
+        }
+        .navbar ul li{
+            /* EN vez de float que habria que hacer un clear, con diplay inline y pasa de un menu vertical a uno horizontal*/
+            display: inline-block;
+
+            }
+            .navbar ul li a{
+                color: white;
+                padding: 10px;
+                text-decoration: none;
+                display: block;
+                }
+                /* pesudo clases */
+                .navbar ul li a:hover{
+                    /* text-decoration: underline; */
+                    background: white;
+                    color: teal;
+                }
+                .navbar ul li a:active{
+                    /* active:click activo*/
+                    background: white;
+                    border-radius: 8px;                }
+        
+
+a{
+        color: white;
+}
+
+.principal{
+    color: black;
+    width: 80%;
+    background: #666666;
+    padding: 2%;
+    float: left;
+    /* height: 60vh; */
+    }
+    .titulo_principal{
+        color: black;
+        background: white;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .titulo_generico{
+        color: black;
+        background: white;
+        padding: 15px;
+        /* margin: 5px; */
+        width: 50%;
+        float: left;
+    }
+    .img_nota{
+        width: 100%;
+    }
+
+/* Formulario de contacto */
+.principal h2{
+    color: white;
+    margin: 20px;
+}
+#formContacto{
+    background-image: url("../img/background-form.jpg");
+    padding: 40px;
+    border-radius: 12px;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    }
+    #formContacto input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.2em;
+        margin-bottom: 12px;
+        border: none;
+        border-radius: 8px;
+        }
+    #formContacto input[type="radio"]{
+            width: 10%;
+    }
+    #formContacto input[type="checkbox"]{
+        width: auto;
+    }
+    #formContacto select{
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+    #formContacto textarea{
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+    #formContacto input[type="submit"]{
+        width: 100%;
+        background: rgb(112, 146, 241);
+        display: block;
+        transition: 0.5s;
+        }
+    #formContacto input[type="submit"]:hover{
+            background: rgb(199, 199, 233);
+            cursor: pointer;
+        }
+
+
+.banner{
+    width: 20%;
+    /* background: #aaaaaa; */
+    background: white;
+    padding: 2%;
+    float: right;
+    /* vh: viewport height */
+    height: 90vh;
+}
+
+.footer{
+    clear: both;
+    background: #94b4e7;
+    padding: 2%;
+    text-align: center;
+}
