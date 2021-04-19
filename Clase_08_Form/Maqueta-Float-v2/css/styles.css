@@ -110,11 +110,14 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     }
+    #formContacto span{
+        font-size: 1.2em;
+    }
     #formContacto input{
         width: 100%;
         padding: 10px;
         margin: 10px;
-        font-size: 1.2em;
+        font-size: 1em;
         margin-bottom: 12px;
         border: none;
         border-radius: 8px;
@@ -129,7 +132,7 @@ a{
         width: 100%;
         padding: 10px;
         margin: 10px;
-        font-size: 1.2em;
+        font-size: 1em;
         border: none;
         border-radius: 8px;
     }
@@ -137,7 +140,7 @@ a{
         width: 100%;
         padding: 10px;
         margin: 10px;
-        font-size: 1.2em;
+        font-size: 1em;
         border: none;
         border-radius: 8px;
     }
