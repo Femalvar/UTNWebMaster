@@ -100,6 +100,7 @@ a{
     background: white;
     padding: 2%;
     float: right;
+    /* vh: viewport height */
     height: 90vh;
 }
 
