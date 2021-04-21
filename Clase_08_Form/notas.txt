@@ -1,0 +1,33 @@
+
+Formularios HTML
+
+<form>
+    -> elemento de bloque
+    -> action: la accion del form -> action="mailto:mail"
+    -> method: metodo de envio (verbos HTTP) / POST-GET -> "POST"
+
+    Datos: (elementos de linea)
+
+    <input>
+        campo de texto, de linea simple 
+        -> type: tipo de campo (text, email, number, url, color, date, password, checkbox, radio, button, submit, reset), el default es "text"
+        -> name: nombre que va a guardar y enviar el valor(value) -> name=value
+        -> otros atributos: min, max, step, longdesc, minlength, maxlenght="140"
+        
+    <select>
+        -> campo desplegable o combo
+        -> name
+        <option value="1" >Dato 1</option>
+        <option value="2" >Dato 2</option>
+    </select>
+
+    <textarea>
+        Textos multilinea
+        -> name
+    </textarea>
+
+    <label>
+        agrupa texto(la etiqueta del campo) y el campo
+        Accesibilidad
+    </label>
+</form>

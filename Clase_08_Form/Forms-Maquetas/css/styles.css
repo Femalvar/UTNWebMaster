@@ -1,0 +1,435 @@
+/* modelo de caja: el ancho de los elementos de bloque se da por el width + padding + border
+la propiedad box-sizing arregla esta suma, liberando todo el ancho con with
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;   
+}
+
+#contenedor{
+    width: 90%;
+    max-width: 980px;
+    margin:0 auto;
+    padding: 20px;
+    background-image: url("../img/BG-gral.jpg");
+    border-radius: 10px;
+    /* height: 100vh; */
+    }
+    #encabezado{
+        background: rgb(248, 175, 17);
+        color: white;
+        padding: 4px;
+        padding-left: 24px;
+        margin: -24px;
+        margin-bottom: 0px;
+        font-size: 3em;
+        font-weight: 200;
+        /* display: inline-block; */
+        }
+        #encabezado img{
+            float: right;
+            max-width: 70px;
+            padding: 10px;
+        }
+    #select_form{
+        width: 100%;
+        /* margin-top: 10px; */
+        font-size: 1.2em;
+        /* float: right; */
+    
+        }
+        #select_form ul{
+            list-style: none;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            }
+            #select_form ul li{
+                background: rgba(255, 255, 255, 0.5);
+                border: 1px solid white;
+                /* border-radius: 12px; */
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px;
+                margin: 6px;
+            }
+            #select_form ul li:hover{
+                background: rgb(248, 175, 17, 0.6);
+                transition: 0.5s;
+                }
+                #select_form ul li#seleccionado{
+                    background: rgb(248, 175, 17);
+                }
+
+
+            #select_form ul li a{
+                /* width: 24%; */
+                text-decoration: none;
+
+
+                }
+            #select_form ul li h4{
+                color: rgb(0, 0, 0);
+                padding-left: 20px;
+                margin-bottom: 10px;
+                text-align: left;
+                font-weight: 200;
+                font-size: 1.3em;
+            }
+
+/* FORMULARIO - MODELO 1 */
+
+.modelo_1{
+    background: rgba(255, 255, 255, 0.6);
+    width: 98%;
+    /* max-width: 560px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    /* padding: 16px; */
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    /* display:block; */
+        }
+        .etiqueta {
+            width: 160px;
+            background: #01c2c2;
+            color: white;
+            font-size: 1.4em;
+            padding: 3px;
+            margin-top: -30px;
+            margin-bottom: 40px;
+        }
+        .modelo_1 #formContacto{
+            font-size: 0.8em;
+            font-weight: 400;
+            background: rgb(255, 255, 255);
+            /* border: 1px solid rgba(200, 200, 200, 0.4); */
+            width: 90%;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 26px;
+            display:inline-block;
+            box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.1);
+        }
+        .modelo_1 #formContacto span{
+            color: rgb(80, 80, 80);
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 14px;
+            float: left;
+        }
+        .modelo_1 #formContacto input{
+            clear: both;
+            width: 100%;
+            background: #e7f1f1;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid rgba(200, 200, 200, 0.4);
+            border-radius: 4px;
+            float: left;
+        }
+
+        .modelo_1 #formContacto input[type="submit"]{
+            margin-top: 30px;
+            color: white;
+            font-weight: 600;
+            background: #01c2c2;
+            }
+            .modelo_1 #formContacto input[type="submit"]:hover{
+                background: #009696;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+        
+        
+/* FORMULARIO - MODELO 2 */
+
+.modelo_2{
+    background: rgba(255, 255, 255, 0.6);
+    width: 98%;
+    /* max-width: 560px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    /* padding: 16px; */
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    display:block;
+        }
+        .etiqueta_2 {
+            color: white;
+            font-size: 2.6em;
+            font-weight: 400;
+            margin-top: -10px;
+            margin-bottom: 6px;
+            margin-left: -50%;
+        }
+        .modelo_2 #formContacto{
+            font-size: 0.8em;
+            font-weight: 400;
+            background: #2ba9c6;
+            width: 90%;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 26px;
+            box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.3);
+        }
+        .modelo_2 #formContacto span{
+            color: white;
+            font-size: 1em;
+            font-weight: 400;
+            margin-top: 14px;
+            float: left;
+        }
+        .modelo_2 #formContacto input{
+            font-size: 1em;
+            width: 36%;
+            background: #ffffff;
+            padding: 2px;
+            margin-left: 11px;
+            margin-top: 12px;
+            border: 1px solid rgba(200, 200, 200, 0.4);
+            border-radius: 1px;
+            }
+            .modelo_2 #formContacto input[name="email"]{
+                width: 76%;
+                margin-left:13px;
+            }
+            .modelo_2 #formContacto input[name="codigoArea"]{
+                width: 20%;
+                margin-left: 26px;
+            }
+            .modelo_2 #formContacto input[name="telefono"]{
+                width: 52%;
+                margin-left:12px;
+            }
+            .modelo_2 #formContacto .g-recaptcha{
+                /* width: 50px; */
+                transform: scale(0.70);
+                transform-origin: 0 0;
+                font-size: 1em;
+                margin-top: 10px;
+                margin-bottom: -18px;
+                margin-left:76px;
+            }
+
+        .modelo_2 #formContacto textarea{
+            width: 76%;
+            margin-top: 12px;
+            margin-left:18px;
+            border: 1px solid rgba(200, 200, 200, 0.4);
+            border-radius: 1px;
+        }
+    
+
+            .modelo_2 #formContacto .linea_div{
+                width: 100%;
+                background: rgba(255, 255, 255, 0.5);
+                padding-bottom: 1px;
+                margin-top: 10px;
+                clear: both;
+        }
+        .modelo_2 #formContacto input[type="submit"]{
+            margin-top: 20px;
+            margin-left: 0px;
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+            padding: 8px;
+            background: #ffffff00;
+            border-radius: 6px;
+            border: 1px solid white;
+            display: block;
+            }
+            .modelo_2 #formContacto input[type="submit"]:hover{
+                background: rgba(255, 255, 255, 0.5);
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+
+/* FORMULARIO - MODELO 3 */
+
+.modelo_3{
+    background: rgba(255, 255, 255, 0.6);
+    width: 98%;
+    /* max-width: 560px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+
+    text-align: center;
+    /* display:block; */
+        }
+        .etiqueta_3 {
+            width: 114%;
+            background: #18aa8d;
+            color: white;
+            font-size: 2.2em;
+            text-align: left;
+            margin-top: -26px;
+            margin-left: -7%;
+            padding: 20px;
+            padding-left: 30px;
+            
+        }
+        .modelo_3 #formContacto{
+            font-size: 0.8em;
+            font-weight: 400;
+            background: rgb(255, 255, 255);
+            width: 90%;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 26px;
+            display:inline-block;
+            box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .modelo_3 #formContacto input{
+            width: 100%;
+            margin-top: 28px;
+            margin-bottom: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 0;
+            border-bottom: 1px solid #18aa8d;
+        }
+
+        .modelo_3 #formContacto input[type="submit"]{
+            border-radius: 4px;
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-top: 30px;
+            padding: 10px;
+            color: white;
+            font-size: 2em;
+            font-weight: 400;
+            background: #18aa8d;
+            }
+            .modelo_3 #formContacto input[type="submit"]:hover{
+                background: #148670;
+                width: 100%;
+                margin-left: 0%;
+                margin-right: 0%;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+/* FORMULARIO - MODELO 4 */
+
+.modelo_4{
+    background: rgba(255, 255, 255, 0.6);
+    width: 98%;
+    /* max-width: 560px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    text-align: center;
+    /* display:block; */
+        }
+        .etiqueta_4 {
+            width: 114%;
+            background: white;
+            color: #5bbeff;
+            font-size: 2.2em;
+            text-align: left;
+            margin-bottom: 10px;
+            margin-top: -26px;
+            margin-left: -7%;
+
+            padding: 8px;
+            padding-left: 20px;
+            
+        }
+        .modelo_4 #formContacto{
+            font-size: 0.8em;
+            font-weight: 400;
+            background: #5bbeff;
+            width: 90%;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 26px;
+            display:inline-block;
+            box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.1);
+        }
+        .modelo_4 #formContacto span{
+            color: white;
+            font-size: 1.4em;
+            font-weight: 400;
+            margin-top: 14px;
+            float: left;
+        }
+        .modelo_4 #formContacto input{
+            clear: both;
+            width: 100%;
+            background: #40adf2;
+            padding: 12px;
+            margin-top: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 6px;
+            float: left;
+            }
+              
+            .input-icons .img-user{
+                position: fixed;
+                margin-left: -190px;
+                margin-top: 48px;
+            }
+            .input-icons .img-mail{
+                position: fixed;
+                margin-left: -190px;
+                margin-top: 128px;
+            }
+            .input-icons .img-white{
+                position: fixed;
+                margin-left: -190px;
+                margin-top: 208px;
+            }
+
+
+        .modelo_4 #formContacto textarea{
+            clear: both;
+            width: 100%;
+            background: #40adf2;
+            margin-top: 4px;
+            border: 1px solid rgba(200, 200, 200, 0.4);
+            border-radius: 6px;
+            float: left;
+        }
+
+        .modelo_4 #formContacto input[type="submit"]{
+            width: 60%;
+            margin-left: 20%;
+            margin-right: auto;
+            margin-top: 26px;
+            color: white;
+            padding: 6px;
+            font-size: 2.2em;
+            font-weight: 200;
+            background: #f6ad39;
+            }
+            .modelo_4 #formContacto input[type="submit"]:hover{
+                background: #d4942d;
+                transition: 0.5s;
+                cursor: pointer;
+            }

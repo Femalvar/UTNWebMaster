@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos FORMS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;800&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+    
+    <main id="contenedor">
+        
+        <header id="encabezado">
+            <span>Formularios</span>
+            <a href="index.html"><img src="img/Home.png" alt="Go Home"></a>
+        </header>
+
+        <section class="modelo_2">
+
+            <form action="mailto:alvarezfedericomanuel@gmail.com" method="POST" id="formContacto" target="_blank">
+                <div class="etiqueta_2">Contact form</div>
+                <div>
+                    <label>
+                        <div>
+                            <span>Your Name</span>
+                            <input type="text" name="nombre" placeholder="First Name" required>
+                            <input type="text" name="apellido" placeholder="Last Name" required>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <span>Your Email</span>
+                            <input type="text" name="email" placeholder="e.g. your@email.com" required>
+                        </div>
+                    </label>
+                    <label>
+                        <span>Phone *</span>
+                        <input type="text" name="codigoArea" placeholder="Area Code" required>
+                        <input type="text" name="telefono" placeholder="Phone Number" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="comentario2" id="textArea2" cols="30" rows="3"></textarea>
+                    </label>
+                    <label>
+                        <span>Verification *</span>
+                        <div class="g-recaptcha" data-sitekey="#" data-callback="#"></div>
+                    </label>
+
+                    <div class="linea_div"></div>
+                    
+                    <label>
+                        <input type="submit" value="SUBMIT FORM">
+                    </label>
+                </div>
+            </form>
+
+        </section>
+
+        <nav id="select_form">
+            <ul>
+                <li>
+                    <a href="modelo1.html"><img src="img/form_1.png" alt="Modelo 1">
+                        <h4>Modelo 1</h4>
+                    </a>
+                </li>
+                <li id="seleccionado">
+                    <img src="img/form_2.png" alt="Modelo 2">
+                        <h4>Modelo 2</h4>
+                </li>               
+                <li>
+                    <a href="modelo3.html"><img src="img/form_3.png" alt="Modelo 3">
+                        <h4>Modelo 3</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="modelo4.html"><img src="img/form_4.png" alt="Modelo 4">
+                        <h4>Modelo 4</h4>
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+            
+
+
+
+        
+        
+    </main>
+    
+</body>
+</html>
