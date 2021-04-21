@@ -391,17 +391,17 @@ html{
             }
               
             .input-icons .img-user{
-                position: fixed;
+                position: absolute;
                 margin-left: -190px;
                 margin-top: 48px;
             }
             .input-icons .img-mail{
-                position: fixed;
+                position: absolute;
                 margin-left: -190px;
                 margin-top: 128px;
             }
             .input-icons .img-white{
-                position: fixed;
+                position: absolute;
                 margin-left: -190px;
                 margin-top: 208px;
             }
