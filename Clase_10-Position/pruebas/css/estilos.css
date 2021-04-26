@@ -1,0 +1,28 @@
+/* Position */
+.contenedor{
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.caja1, .caja2, .caja3{
+    width: 20%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: static; /* valor por default */
+
+}
+.caja1{
+    background: orange;
+}
+.caja2{
+    background: rgb(0, 102, 255);
+}
+.caja3{
+    background: rgb(21, 255, 0);
+    position: relative;
+    top: -30px;
+    left: 20px;
+}

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contenedor{
+    position: relative;
+    background-image: url("../img/space-bg.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    max-width: 1200px;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    }
+    #contenedor img{
+        width: 100%;
+    }
+    .arsat{
+        position: absolute;
+        z-index: 5;
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        top: 35%;
+        /* margin-left: 40%;
+        margin-right: auto; */
+
+    }
+    .jupiter{
+        z-index: 4;
+        position: absolute;
+        width: 70%;
+        top: 20%;
+        left: -30%;
+    }
+    .luna{
+        z-index: 3;
+        position: absolute;
+        width: 14%;
+        top: 10%;
+        right: 26%;
+    }
+    .meteoro{
+        z-index: 2;
+        position: absolute;
+        width: 20%;
+        bottom: 10%;
+        right: 10%;
+    }
+    .tierra{
+        position: absolute;
+        width: 30%;
+        top: 4%;
+        right: 2%;
+    }
