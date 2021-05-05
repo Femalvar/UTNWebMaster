@@ -4,18 +4,20 @@
     box-sizing: border-box;
 }
 body{
-    width: 94%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-image: url("../img/space-bg.jpg");
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 #contenedor{
     position: relative;
-    background-image: url("../img/space-bg.jpg");
-    background-size: 100vw;
-    background-repeat: no-repeat;
+    /* background-size: 100vw; */
     /* width: 100%; */
-    max-width: 1200px;
-    height: 80vh;
+    /* max-width: 1200px; */
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
