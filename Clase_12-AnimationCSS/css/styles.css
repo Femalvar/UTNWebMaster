@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;   
+}
+header{
+    width: 100%;
+    background: chocolate;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+main{
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: auto;
+    padding: 10px;
+    background: rgb(228, 228, 228);
+    /* display: inline-block; */
+    }
+    .cont_anim{
+        position: relative;
+        background: white;
+        margin: 10px;
+        padding: 20px;
+        width: 48%;
+        height: 300px;
+        min-width: 340px;
+        overflow: hidden;
+        display: inline-block;
+    }
+    /* Animacion 1 - translate and rotate */
+
+    @keyframes anim_1{
+        0%{
+            /* transform: translateX(0px);
+            transform: rotate(0); */
+            transform: translateX(0) rotate(0);
+            /* background: red; */
+            
+
+        }
+        50%{
+            transform: translateX(-30px);
+        }
+        100%{
+            /* transform: translateX(200px);
+            transform: rotate(180deg); */
+            transform: translateX(320px) rotate(180deg);
+            background: blue;
+        }
+    }
+
+
+    .titulo_anim_1{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background: rgb(184, 184, 184);
+    }
+    .cuadrado_anim_1{
+        position: absolute;
+        background: red;
+        color: white;
+        border-radius: 50%;
+        font-size: 4em;
+        font-weight: 200;
+        text-align: center;
+        bottom: 40%;
+        left: 10%;
+        width: 80px;
+        height: 80px;
+        animation-name: anim_1;
+        animation-duration: 1.2s;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: 4;
+        /* animation-iteration-count: infinite; */
+        animation-timing-function: ease-in-out;
+        }
+    .titulo_anim_2{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background: rgb(184, 184, 184);
+    }
+    .cuadrado_anim_2{
+        position: absolute;
+        background: red;
+        background-image: url(../img/paisaje.jpg);
+        background-size: cover;
+        color: white;
+        top: 40px;
+        left: 10%;
+        width: 80%;
+        height: 220px;
+    }
