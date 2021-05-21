@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'KoHo', sans-serif;
+    font-size: 12px;
+}
+body{
+    background: rgb(240, 240, 240);
+}
+h1{
+    font-weight: 400;
+}
+
+#contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+}
+
+.banner_top{
+    background: rgb(240, 240, 240);
+    padding: 2px;
+    padding-top: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+.banner_top_chico{
+        display: none;
+    }
+    .banner_top_mediano{
+        display: none;
+    }
+    .banner_top_grande{
+        display: block;
+    }
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding-bottom: 2px;
+    }
+    .logo{
+        margin-left: 10px;
+        font-size: 2em;
+        align-self: center;
+    }
+    .nav_header{
+        width: 60%;
+        font-size: 1.2em;
+        font-weight: 500;
+        align-self: center;
+        margin-right: 10px;
+        /* background: chartreuse; */
+        }
+        .nav_header ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style: none;
+            }
+            .nav_header ul li{
+                background: rgb(255, 255, 255);
+                border-radius: 6px;
+                padding: 6px;
+                padding-left: 16px;
+                padding-right: 16px;
+                margin-left: 10px;
+                }
+        .nav_header ul .bt_publicar{
+            color: white;
+            font-weight: 700;
+            border: 1px solid white;
+            background: rgb(0, 141, 134);
+            margin-left: 40px;
+            cursor: pointer;
+            }
+            .nav_header ul .bt_publicar:hover{
+                background: rgb(2, 182, 173);
+            }
+        .nav_header ul .bt_login{
+            color: rgb(100, 100, 100);
+            background: white;
+            cursor: pointer;
+            }
+            .nav_header ul .bt_login:hover{
+                color: black;
+                background: rgba(224, 224, 224, 0.2);                
+                border-top: 1px solid rgba(128, 128, 128, 0.2);
+                border-left: 1px solid rgba(128, 128, 128, 0.2);
+            }
+        .nav_header ul .bt_registro{
+            color: rgb(100, 100, 100);
+            background: white;
+            cursor: pointer;
+            }
+            .nav_header ul .bt_registro:hover{
+                color: black;
+                background: rgba(224, 224, 224, 0.2);
+                border-top: 1px solid rgba(128, 128, 128, 0.2);
+                border-left: 1px solid rgba(128, 128, 128, 0.2);
+            }
+main{
+    width: 100%;
+}
+/* HOME BIENVENIDA */
+.home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background: #f9d042;
+    background-image: url("../img/auto.png");
+    background-position: right bottom;
+    background-size: 60%, contain;
+    background-repeat: no-repeat;
+    height: 60vh;
+    overflow: hidden;
+    }
+    .home_titulo{
+        /* background: rgba(128, 255, 0, 0.288); */
+        color: white;
+        font-size: 4em;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+        margin-left: 30px;
+        padding-top: 4%;
+        width: 66%;
+        
+    }
+    .home_bt_buscar{
+        background: rgb(0, 141, 134);
+        color: white;
+        border-radius: 12px;
+        padding: 10px 50px 12px;
+        margin-left: 10%;
+        font-size: 3em;
+        cursor: pointer;
+        }
+        .home_bt_buscar:hover{
+            background: rgb(2, 182, 173);
+        }
+/* BUSCADOR Y FILTROS */
+.buscador{
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+    }
+    .buscar{
+        background: white;
+        border-radius: 4px;
+        margin: 4px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 50%;
+        align-self: center;
+    }
+    .filtrar{
+        background: white;
+        border-radius: 4px;
+        margin: 4px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 50%;
+        align-self: center;
+        }
+/* CARDS PUBLICACIONES */
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgba(240, 240, 240);
+}
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: white;
+        width: 24%;
+        border-radius: 20px;
+        box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.2);
+        margin: 6px;
+        overflow: hidden;
+    }
+    .card_foto{
+        margin-top: -30px;
+        overflow: hidden;
+            }
+            .card_foto img{
+                width: 100%;
+                margin-top: -10px;
+            }
+    .card_descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        }
+        .card_marca{
+            font-size: 1.8em;
+            font-weight: 500;
+            color: rgb(0, 141, 134);
+        }
+        .card_ano-kms, .card_ubicacion{
+            font-family: sans-serif;
+            font-size: 1.2em;
+            color: gray;
+        }
+        .card_valor{
+            padding-top: 10px;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: rgb(0, 141, 134);
+            text-align: right;
+        }
+
+
+/* MOBILE */
+@media (min-width:0px) and (max-width:480px) {
+
+/* Header */
+header{
+    flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+        padding-bottom: 4px;
+    }
+    .nav_header{
+        padding-bottom: 4px;
+        width: 100%;
+    }
+    .nav_header ul{
+        justify-content: space-around;
+    }
+
+/* .banner_top{
+    margin: 4px;
+    text-align: center;
+    } */
+    .banner_top_chico{
+        display: block;
+    }
+    .banner_top_mediano{
+        display: none;
+    }
+    .banner_top_grande{
+        display: none;
+    }
+
+    .home{
+        background-size: 70%, contain;
+        /* background-repeat: no-repeat; */
+        height: 60vh;
+        align-items: center;
+        overflow: hidden;
+        }
+        .home_titulo{
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            font-size: 2.4em;
+            margin-left: 0px;
+            text-align: center;
+            
+        }
+        .home_bt_buscar{
+            margin-left: 0%;
+            font-size: 3em;
+            cursor: pointer;
+            padding: 10px 30px 12px;
+            }
+            .home_bt_buscar:hover{
+                background: rgb(2, 182, 173);
+            }
+    
+
+/* BUSCADOR Y FILTROS */
+.buscador{
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .buscar{
+        width: 98%;
+    }
+    .filtrar{
+        width: 98%;
+    }
+/* MOBILE - END */
+
+
+}

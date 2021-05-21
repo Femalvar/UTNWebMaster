@@ -1,0 +1,35 @@
+*{margin:0}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    background: #00aeac;
+    z-index: 999999999999;
+}
+
+.barra{
+    /* height: 40px; */
+    background: #069291
+}
+
+.slider{
+    /*#948295 #5f5f85 #646d8e*/
+    background: linear-gradient(-60deg, #948295,#5f5f85,#646d8e);
+   
+}
+
+.noticias .row figure img{
+    width:100%;
+}
+
+.logo a{
+    /* background: rgb(3, 66, 51); */
+    border-radius: 10px;
+}
+.logo a:hover{
+    background: rgb(10, 131, 103);
+}
+
+
+

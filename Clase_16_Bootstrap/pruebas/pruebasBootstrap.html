@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    
+    <!-- Normalize (CSS Reset) -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+    
+    <div class="container bg5">
+        <h1>Esto es un .container</h1>
+    </div>
+
+    <div class="container-fluid bg2">
+        <h2>Esto es un .container-fluid</h2>
+    </div>
+
+    <div class="container-fluid bg3">
+        <div class="container">
+            Esto es un container dentro de un -fluid
+        </div>
+    </div>
+
+    <h2>Grilla</h2>
+
+    <h3>Columnas Default -> .col</h3>
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row"><!-- flex-container-->
+                <!-- flex-item-->
+                <div class="columnas col bg4"></div>
+                <div class="columnas col bg3"></div>            
+            </div>
+        </div>
+    </section>
+
+    <h3>Columnas con ancho (ojo que son hasta 12) -> .col-*</h3>
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-around"><!-- flex-container-->
+                <!-- flex-item-->
+                <div class="columnas col-5 bg4"></div>
+                <div class="columnas col-5 bg3"></div>
+                <div class="columnas col-5 bg4"></div>           
+            </div>
+        </div>
+    </section>
+
+    <h3>Columnas responsive (ancho + breakpoint) -> col-*-*</h3>
+    <!-- Breakpoint -> sm / md / lg / xl / xxl -->
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row"><!-- flex-container-->
+                <!-- flex-item-->
+                <div class="sinPadding col-lg-3 col-md-6 col-sm-12">
+                    <p class="bg4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minus. Natus optio facere porro? Ullam delectus excepturi quia beatae amet ratione sequi? Praesentium a delectus dicta voluptates nisi perferendis nam?</p>
+                </div>
+                <div class="sinPadding col-lg-3 col-md-6 col-sm-12">
+                    <p class="bg3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minus. Natus optio facere porro? Ullam delectus excepturi quia beatae amet ratione sequi? Praesentium a delectus dicta voluptates nisi perferendis nam?</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <p class="bg4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minus. Natus optio facere porro? Ullam delectus excepturi quia beatae amet ratione sequi? Praesentium a delectus dicta voluptates nisi perferendis nam?</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <p class="bg4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minus. Natus optio facere porro? Ullam delectus excepturi quia beatae amet ratione sequi? Praesentium a delectus dicta voluptates nisi perferendis nam?</p>
+                </div>           
+            </div>
+        </div>
+
+        <h3>Columnas Anidadas (Nested)</h3>
+
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="columnas col-md-8 bg4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="bg11 mt-2"> <!-- mt margin top... ej m-3  pega a todos los margenes-->
+                                    Columna
+                                </p> </div>
+                            <div class="col-md-6">
+                                <p class="bg11 pt-3 mt-2"> <!-- mt padding top... ej m-3  pega a todos los padding-->
+                                    Columna
+                                </p> </div>
+                        </div>
+                    </div>
+                    <div class="columnas col-md-4 bg3"></div>         
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
