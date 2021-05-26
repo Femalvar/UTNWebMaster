@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(236, 236, 236);
+}
+
+    header .boton-nav{
+        width: 100px;
+        margin-top: 6px;
+        background: rgb(189, 206, 255);
+        overflow: hidden;
+    }
+    header ul li{
+        list-style: none;
+    }
+    header .skull{
+        width: 50px;
+    }
+    header .skull:hover{
+        animation: tada; /* sacado de ANIMATECSS */
+        animation-duration: 1s; /* don't forget to set a duration! */
+        /* animation-delay: 0.8s; */
+        animation-iteration-count: infinite;
+    }
+    main{
+        background: rgb(236, 236, 236);
+        height: 100vh;
+        padding: 0px;
+        /* margin-top: 10px; */
+    }
+    .titulo{
+        color: rgb(92, 92, 92);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+/* OWLCAROUSEL */
+.owl-carousel .item{
+    margin: 3px;
+  }
+  .owl-demo .item img{
+    /* display: block; */
+    width: 100%;
+    /* height: auto; */
+  }
+  .owl-nav{
+      font-size: 5em;
+      font-weight: 400;
+      text-align: center;
+      color: rgb(92, 92, 92);
+  }
+
+
+    @media (min-width:0px) and (max-width:767px) {
+        header .skull{
+            width: 430%;
+        }
+     }

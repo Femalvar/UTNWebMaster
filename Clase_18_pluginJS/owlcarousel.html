@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- OWLCAROUSEL -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/stykes.css">
+
+
+    <title>Owl Carousel</title>
+</head>
+<body>
+            <section class="container-fluid">
+                <article class="container">
+                    <div class="titulo"><h1>OwlCarousel</h1></div>
+                        <!-- OWLCAROUSEL -->
+
+                        <div class="owl-carousel">
+                            <div class="item"><img src="img/owl_1.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="img/owl_2.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="img/owl_3.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="img/owl_4.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="img/owl_5.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="img/owl_6.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="img/owl_7.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="img/owl_8.jpg" alt="Owl Image"></div>
+                        </div>
+                          
+                </article>
+            </section>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- OWLCAROUSEL -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    480:{
+                        items:2,
+                        nav:false
+                    },
+                    768:{
+                        items:3,
+                        nav:false
+                    },
+                    920:{
+                        items:4,
+                        nav:false
+                    },
+                    1100:{
+                        items:5,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            });
+
+        });
+
+        
+    </script>
+
+
+</body>
+</html>

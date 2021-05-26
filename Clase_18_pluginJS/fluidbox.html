@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css" integrity="sha512-1gVXQF5Q9gL1HvHBLK0y3IAWCorLY9EU+JMTsLBlXgWfgf6EIS/8B27R/nUq1joeKz2N7ZHCNnLCjc+PuqDqDA==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/stykes.css">
+
+
+    <title>Fluid Box</title>
+</head>
+<body>
+            <main class="container-fluid">
+
+                <section id="gallery">
+                    <div class="titulo"><h1>FluidBox</h1></div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center pt-5">
+                            <a href="img/image_grande_1.jpg" rel="lightbox">
+                                <img src="img/image_chica_1.jpg" class="width: 100%;" alt="image 1">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center pt-5">
+                            <a href="img/image_grande_2.jpg" rel="lightbox">
+                                <img src="img/image_chica_2.jpg" alt="image 2">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center pt-5">
+                            <a href="img/image_grande_3.jpg" rel="lightbox">
+                                <img src="img/image_chica_3.jpg" alt="image 3">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center pt-5">
+                            <a href="img/image_grande_4.jpg" rel="lightbox">
+                                <img src="img/image_chica_4.jpg" alt="image 4">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+
+
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <!-- FLUIDBOX -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js" integrity="sha512-0kQqdmb3fpKtRwrbCZDlmiwuZgDyPAOLDOu/HyAt4py7lAVDXKknqtqS6dFNV8U8JrHZymQxlO9SFPZ2u8dhMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            $('#gallery a[rel="lightbox"]').fluidbox();
+        })
+    </script>
+
+</body>
+</html>
