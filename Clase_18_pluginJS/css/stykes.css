@@ -5,6 +5,11 @@
 }
 body{
     background: rgb(236, 236, 236);
+    font-size: 16px;
+}
+header{
+    position: fixed;
+    z-index: 999;
 }
 
     header .boton-nav{
@@ -29,6 +34,8 @@ body{
         background: rgb(236, 236, 236);
         height: 100vh;
         padding: 0px;
+        position: relative;
+        top: 70px;
         /* margin-top: 10px; */
     }
     .titulo{
@@ -58,4 +65,40 @@ body{
         header .skull{
             width: 430%;
         }
+        main{
+            top: 240px;
+            /* margin-top: 10px; */
+        }
      }
+
+/* PARALLAX */
+
+.con_paralax{
+    /* position: relative; */
+    width: 100%;
+    /* max-width: 900px; */
+    height: 600px;
+    overflow: hidden;
+
+}
+
+#parallax {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/BG-3_parallax.png"), url("../img/BG-2_parallax.png"), url("../img/BG-1_parallax.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+  }
+  .txt_parallax span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    opacity: .5;
+    font-size: 4em;
+  }
+
