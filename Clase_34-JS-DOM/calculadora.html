@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+</head>
+<body>
+    
+    <div style="width: 50%; text-align: center; background: lightgray; margin-left: 25%; margin-right: auto;">
+        <h1>Calculadora en JS</h1>
+    
+        <form action="">
+            <input type="number" name="" id="num1" placeholder="inserta un numero" style="padding: 6px; margin: 10px;" required><br>
+            <select name="" id="signo" style="padding: 6px; margin: 10px;">
+                <option value="">selecciona una operación</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select><br>
+            <input type="number" name="" id="num2" placeholder="inserta un numero" style="padding: 6px; margin: 10px;" required><br>
+            <button type="button" id="boton">CALCULAR</button>
+            <button type="reset" id="borrar">BORRAR</button>
+        </form><br>
+        <div id="resultado" style="font-size: 1.6em; padding: 4px;"></div>
+
+    </div>
+
+
+    <script src="js/calculadora.js"></script>
+    
+</body>
+</html>
