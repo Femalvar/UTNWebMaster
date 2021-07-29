@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'KoHo', sans-serif;
+    font-size: 12px;
+    background: #f0f0f0;
+}
+a{text-decoration: none;}
+
+.bg1{background: #003049;}
+.bg2{background: #6b2c39;}
+.bg3{background: #d62828;}
+.bg4{background: #ffc107;}
+.bg5{background: #fcbf49;}
+.bg6{background: #eae2b7;}
+.bg7{background: #212529;}
+.bg8{background: #141414;}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    color: white;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+@media (min-width:0px) and (max-width:499px) {
+    header .logo-header{
+        display: none;
+    }
+    header .isologo-header{
+        display: block;
+    }
+}
+@media (min-width:500px) and (max-width:2100px) {
+    header .logo-header{
+        display: block;
+    }
+    header .isologo-header{
+        display: none;
+    }
+}
+
+/* MODALS */
+.modal {
+	/* background: rgba(221, 221, 221, 0.8); */
+    background: linear-gradient(black, rgba(0, 0, 0, 0.5),black);
+    }
+    .fotoperfil{
+        border-radius: 50%;
+        text-align: center;
+    }
+
+/* SLIDER */
+.text-slider{
+    color: white;
+    font-size: calc(3.6rem + 2.4vw);
+    /* font-size: 2.6em; */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+.carousel-item{
+    overflow: hidden;
+}
+.carousel-item img{
+    margin-right: 10px;
+}
+.bt-slider{
+    border-radius: 2em;
+    }
+    .bt-slider span{
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: calc(1.5rem + 1vw);
+        font-weight: 400;
+    }
+
+/* BUSCADOR */
+.form-select:focus{
+    border: 1px solid #212529b2;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.18);
+    }
+
+/* CARD */
+/* CARDS PUBLICACIONES */
+.card{
+    margin-bottom: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    }
+    .card:hover{
+        border: 1px solid rgba(128, 128, 128, 0.6);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        /* background: rgb(253, 253, 235); */
+        }
+    .card_descripcion{
+        padding: 8px;
+    }
+        .card_marca{
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #212529;
+        }
+        .card_ano-kms, .card_ubicacion{
+            font-family: sans-serif;
+            font-size: 1em;
+            font-weight: 100;
+            color: gray;
+        }
+        .card_valor{
+            text-align: right;
+            }
+            .card_valor a{
+                border-radius: 0px;
+                padding: 1px;
+                font-size: 2.2em;
+                font-weight: 800;
+                color: #ffc107;
+            }
+/* PAGINACION */
+.page-link{
+    background: #ffc107;
+    color: black;
+    font-weight: 400;
+    border: 1px solid #212529;
+    margin: 4px;
+    }
+    .page-link:hover{
+        color: black;
+    }
+
+
+/* FOOTER */
+footer .bt-footer{
+    border: none;
+    font-size: 1.2em;
+    font-weight: 800;
+    }
+    .rrss-icons{
+        text-align: end;
+    }
+    .rrss-icons img{
+        margin-left: 10px;
+        }
+    .rrss-icons img:hover{
+        filter: invert(0.4);
+        }
+
+.copyright{
+    background: rgb(30, 30, 30);
+    color: rgb(210, 210, 210);
+    padding: 8px 0px;
+    margin: 0px -10px;
+    text-align: center;
+}
+
+/* BANNERS */
+.banner_top{
+    /* background: white; */
+    text-align: center;
+}
+.banner_top img{
+        text-align: center;
+        margin: 10px 0px;
+        width: 100%;
+        max-width: 970px;
+    }
