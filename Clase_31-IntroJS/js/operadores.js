@@ -2,7 +2,7 @@
 // = > < => =< == === != -> operadores de comparacion
 
 // OPERADORES ARITMETICOS
-document.write("<hr>"+"<h4>Operadores Aritmeticos:</h4>")
+document.write(`<hr><h4>Operadores Aritmeticos:</h4>`)
 
 let num1 = 35
 let num2 = 55
@@ -10,8 +10,7 @@ let num2 = 55
 const suma = num1 + num2
 
 console.log(suma)
-document.write(num1+"+"+num2+"="+suma)
-
+document.write(`${num1}+${num2}=${suma}<br>`)
 
 // OPERADORES DE COMPARACION + Condicional
 document.write("<hr>"+"<h4>Operadores de Comparación:</h4>")
@@ -40,3 +39,4 @@ if (!login) {
 }else{
     console.log("El usuario no esta logueado.")
 }
+

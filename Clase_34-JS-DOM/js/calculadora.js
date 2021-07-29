@@ -11,7 +11,7 @@ document.getElementById("boton").addEventListener("click", function(){
     let operacion
 
     
-    // comparar los signos y realizar operacion
+    // comparar signos y realizar operacion
     if (signo === "+") {
         operacion = num1 + num2
         resultado.innerHTML = `${num1} ${signo} ${num2} = ${operacion}`

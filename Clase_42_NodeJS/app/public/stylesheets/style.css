@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg-redondo{
+    background: rgb(162, 188, 238);
+    border-radius: 10px;
+}
