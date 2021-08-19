@@ -1,26 +1,126 @@
-<div class="container-fluid">
-    <div class="container">
-        <h1>{{title}}</h1>
-        <p>Bienvenidos {{title}}</p>
-            <p>Probando el index</p>
-            <p>Probando el index</p>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam, quod natus obcaecati unde odit nobis, quis laborum reiciendis cupiditate officiis. Voluptatem natus debitis explicabo hic qui sequi eius sit?
-            </span>
-            <p>Probando el index</p>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam, quod natus obcaecati unde odit nobis, quis laborum reiciendis cupiditate officiis. Voluptatem natus debitis explicabo hic qui sequi eius sit?
-            </span>
-            <p>Probando el index</p>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam, quod natus obcaecati unde odit nobis, quis laborum reiciendis cupiditate officiis. Voluptatem natus debitis explicabo hic qui sequi eius sit?
-            </span>
-            
-            <hr>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam, quod natus obcaecati unde odit nobis, quis laborum reiciendis cupiditate officiis. Voluptatem natus debitis explicabo hic qui sequi eius sit?
-            </span>
+{{!-- Banner Portada --}}
+<div class="containerPortada">
+        <div class="container-fluid row">
+            <div class="col-sm-12 col-md-7 text-y-boton row d-flex align-items-center">
+                <h1 class="container display-1 text-center textPortada">
+                    <span>Hacele su DNI!</span>
+                </h1>
+                <div class="container row justify-content-center divBtPortada">
+                    <div class="btPortada text-center py-2" data-bs-toggle="modal" data-bs-target="#RegistroModal">EMPECEMOS</div>
+                </div>
+            </div>
+            <div class="col-md-5 divPortada">
+                <img class="imagePortada" src="/images/petPortada.png" alt="">
 
+            </div>
+        </div>
+</div>
+
+{{!-- Ultimas Huellitas --}}
+<div class="container-fluid">
+    <div class="container bg-utimasHuellitas">
+        <h2 class="titulo-UH display-2 ms-2 p-5 text-center">últimas huellitas</h2>
+        <div class="containerfluid">
+            <div class="row justify-content-around">
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3 bg-uhIndividual_Iz bg-verde">
+                    <img class="img-fluid img-uh" src="/images/DNI-demo-1.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3 bg-uhIndividual_De bg-celeste">
+                    <img class="img-fluid img-uh" src="/images/DNI-demo-2.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3 bg-uhIndividual_Iz bg-amarillo">
+                    <img class="img-fluid img-uh" src="/images/DNI-demo-3.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3 bg-uhIndividual_De bg-rojo">
+                    <img class="img-fluid img-uh" src="/images/DNI-demo-1.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3 bg-uhIndividual_Iz bg-verde">
+                    <img class="img-fluid img-uh" src="/images/DNI-demo-2.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3 bg-uhIndividual_De bg-celeste">
+                    <img class="img-fluid img-uh" src="/images/DNI-demo-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-       
+
+<!-- REGISTRO MODAL -->
+<div class="container-fluid">
+<form action="" method="POST" id="FormRegistro">
+    <div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-grisClaro">
+            <div class="modal-header bg-gradient border-0">
+            <h2 class="modal-title" id="exampleModalLabel">registrate</h2>
+            {{!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+            </div>
+            <div class="modal-body">
+                <label class="row g-3">
+                    <div class="col-6">
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" name="apellido" placeholder="Apellido" required>
+                    </div>
+                </label>
+                <label class="row">
+                    <div class="col-12 my-3">
+                        <input type="text" class="form-control" name="email" placeholder="E-Mail" required>
+                        {{!-- <span class="text-success ps-4">{{emailRegistrado}}</span> --}}
+                    </div>
+                </label>
+                <label class="row g-3">
+                    <div class="col-6">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="password" class="form-control" name="Re_claveUser" placeholder="Repetir Password" required>
+                    </div>
+                </label>
+            </div>
+            <div class="modal-footer border-0">
+                <span class="text-dark">Ya estás registrado?
+                    <span class="pe-2 ps-1"><a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#LoginModal" data-bs-dismiss="modal">Ingresar</a></span>
+                </span>
+                <button type="submit" value="registrarse" target="_self" class="btn btn-danger">REGISTRARME</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</form>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="container-fluid">
+<form action="" method="POST" id="FormLogin">
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-grisClaro">
+            <div class="modal-header bg-gradient border-0">
+            <h2 class="modal-title" id="exampleModalLabel">ingresar</h2>
+            {{!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+            </div>
+            <div class="modal-body">
+                <label class="row">
+                    <div class="col-12 my-3">
+                        <input type="text" class="form-control" name="emailUser" placeholder="E-Mail" required>
+                    </div>
+                </label>
+                <label class="row g-3">
+                    <div class="col-12">
+                        <input type="password" class="form-control" name="claveUser" placeholder="Password" required>
+                    </div>
+                </label>
+            </div>
+            <div class="modal-footer border-0">
+                <span class="text-dark">No estás registrado?
+                    <span class="pe-2 ps-1"><a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#RegistroModal" data-bs-dismiss="modal">Registrate</a></span>
+                </span>
+                <button type="submit" value="registrarse" target="_self" class="btn btn-danger">INGRESAR</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</form>
+</div>

@@ -1,0 +1,81 @@
+    <div class="container-fluid">
+        <form class="d-flex justify-content-center" action="" method="POST" id="datosMascota">
+            <div class="col-lg-6 col-md-8 col-sm-12 bg-grisClaro p-4">
+                <h2 class="formMascota-title text-center mb-2">{{title}}</h2>
+                <div class="modal-body">
+                    <label class="row g-3 mb-3">
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="nombreMascota" id="nombreMascota" placeholder="Nombre/Apodo" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="razaMascota" id="razaMascota" placeholder="Raza" required>
+                        </div>
+                    </label>
+                    <label class="row g-3 mb-3">
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="nacimientoMascota" id="nacimientoMascota" placeholder="Fecha de Nacimiento" onfocus="(this.type = 'date')" required>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-select form-control" name="sexoMascota" id="sexoMascota" aria-label="Default select" required>
+                                <option class="seleccion" selected="">Sexo</option>
+                                <option class="seleccionado" value="Hembra">Hembra</option>
+                                <option class="seleccionado" value="Macho">Macho</option>
+                                <option class="seleccionado" value="No Binario">No Binario</option>
+                            </select>
+                        </div>
+                    </label>
+                    <label class="row g-3 mb-2">
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="nacionMascota" id="nacionMascota" placeholder="Nacionalidad" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="file" class="form-control" id="fotoMascota" name="fotoMascota" required>
+                        </div>
+                    </label>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger" value="AgregarDatos" id="cargarDatos">CARGAR DATOS</button>
+                </div>
+        </form>
+        <div class="p-4">
+            <div class="cont-dni row">
+                <div id="datoFoto" class="fotoDNI"></div>
+                <span class="nombreDNI" id="datoNombre"></span>
+                <span class="razaDNI" id="datoRaza"></span>
+                <span class="sexoDNI" id="datoSexo"></span>
+                <span class="nacimientoDNI" id="datoNacimiento"></span>
+                <span class="nacionDNI" id="datoNacion"></span>
+                <span class="numeroDNI">1400526</span>
+                <img src="" alt="" id="datoFoto">
+                <img class="imageDNI" width="100%" src="/images/DNI-Final.png" alt="">
+            </div>
+        </div>
+</div>
+
+<script>
+    //Cargar Datos
+    let btnCargarDatos = document.getElementById('cargarDatos')
+
+    btnCargarDatos.addEventListener('click',function(){
+
+        let nombre = document.getElementById('nombreMascota')
+        document.getElementById('datoNombre').innerHTML = nombre.value
+
+        let raza = document.getElementById('razaMascota')
+        document.getElementById('datoRaza').innerHTML = raza.value
+        
+        let sexo = document.getElementById('sexoMascota')
+        document.getElementById('datoSexo').innerHTML = sexo.value
+        
+        let nacimiento = document.getElementById('nacimientoMascota')
+        document.getElementById('datoNacimiento').innerHTML = nacimiento.value
+        
+        let nacion = document.getElementById('nacionMascota')
+        document.getElementById('datoNacion').innerHTML = nacion.value
+        
+        document.getElementById('datoFoto').innerHTML = `<img width="120%" src="/images/fotoDNI.jpg" alt="mascota">`
+        
+    }) 
+
+</script>
+

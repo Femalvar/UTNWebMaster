@@ -11,15 +11,18 @@ a{text-decoration: none;}
 .bg-verde{background: #51b847;}
 .bg-amarillo{background: #f8cb0e;}
 .bg-gris{background: #aaa990;}
+.bg-grisClaro{background: #F2F0CD;}
+
+.container{
+  max-width: 1200px;
+}
 
 header{
-  background: white;
   position: sticky;
   top: 0px;
   height: 110px;
   z-index: 999;
   color: white;
-  /* box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5); */
 }
   .headerNav{
     margin-top: 14px;
@@ -35,7 +38,7 @@ header{
     color: #c02846;
     }
   footer{
-    position: sticky;
+    /* position: sticky; */
     bottom: 0px;
     height: 90px;
     background: #aaa990;
@@ -47,4 +50,208 @@ header{
     }
     .bt-FB-IG:hover{
       filter: opacity(1);
+    }
+    .bg-huellas{
+      background-image: url("/images/BG_huellas.png");
+      background-size: cover;
+      background-repeat: repeat-y;
+    }
+    .containerPortada{
+      width: 75vw;
+      height: 420px;
+      margin-top: 60px;
+      background: linear-gradient(0deg, #4f98a0, #9adaf4);
+    }
+    .textPortada{
+      font-family: 'Amatic SC', cursive;
+      font-weight: 700;
+      font-size: 8em;
+      margin-left: 30%;
+      margin-top: 20px;
+      color: white;
+      text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    }
+    .imagePortada{
+      border-radius: 50%;
+      background: #f8cb0e;
+      position: absolute;
+      right: 10%;
+      top: 160px;
+    }
+    .divBtPortada{
+      margin-left: 30%;
+    }
+    .btPortada{
+      background: #51b847;
+      color: white;
+      font-size: 2em;
+      width: 260px;
+      margin-bottom: 60px;
+      border: 3px solid white;
+      border-radius: 6px;
+      }
+      .btPortada:hover{
+        cursor: pointer;
+        background: #3ba032;
+      }
+      .text-y-boton{
+        height: 420px;
+      }
+
+    /* TABLET */
+@media (min-width:720px) and (max-width:920px) {
+  .textPortada{
+    margin-left: 10%;
+    font-size: 6em;
+  }
+  .divBtPortada{
+    margin-left: 10%;
+  }
+  .imagePortada{
+    right: 0%;
+  }
+}
+    /* MOBILE */
+@media (min-width:0px) and (max-width:719px) {
+  .containerPortada{
+    width: 100vw;
+  }
+  .textPortada{
+    margin-left: 5%;
+    font-size: 6em;
+  }
+  .divBtPortada{
+    margin-left: 5%;
+  }
+  .divPortada{
+    display: none;
+  }
+}
+
+/* Home / Ultimas Huellitas */
+.bg-utimasHuellitas{
+  background: rgba(203, 198, 43, 0.2);
+  margin-top: 80px;
+  padding: 0px;
+}
+.titulo-UH{
+  font-family: 'Amatic SC', cursive;
+}
+.bg-uhIndividual_Iz{
+  text-align: center;
+  transform: rotate(-4deg);
+}
+.bg-uhIndividual_De{
+  text-align: center;
+  transform: rotate(4deg);
+}
+.img-uh{
+  transform: rotate(3deg);
+}
+
+/* Modals */
+.modal {
+  /* background: linear-gradient(#f2f0cdbb, #f2f0cd,#f2f0cdd0); */
+  background: hsla(57, 59%, 88%,0.9);
+  background-image: url("/images/BG_huellasColor.png");
+  background-size: cover;
+    }
+    .modal-title{
+      font-family: 'Amatic SC', cursive;
+      font-size: 3em;
+      font-weight: 700;
+      margin-left: 35%;
+      margin-right: auto;
+      margin-bottom: -20px;
+    }
+    .modal-body input[type="text"]{
+      color: #c02846;
+    }
+    .modal-body input[type="password"]{
+      color: #c02846;
+    }
+    .modal-body input::placeholder {
+      color: hsla(348, 66%, 45%, 0.4);
+    }
+    .form-control:focus {
+      border-color: #c0284642;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.4);
+    }
+    .btn-danger{
+      background: #c02846;
+    }
+    .formMascota-title{
+      font-family: 'Amatic SC', cursive;
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: -20px;
+    }
+    
+    /* Form Usuario */
+    .modal-body input[type="date"]{
+      color: #c02846;
+    }
+    .form-select{
+      color: hsla(348, 66%, 45%, 0.4);
+    }
+    .form-select option{
+      color: #c02846;
+    }
+    .modal-body input[type="file"]{
+      color: hsla(348, 66%, 45%, 0.4);
+    }
+
+    /* DNI */
+    .cont-dni{
+      position: relative;
+      font-size: 1.8vw;
+      font-weight: 600;
+    }
+    .nombreDNI{
+      position: absolute;
+      top: 29%;
+      left: 50%;
+      transform: translate(-14%, -50%);
+    }
+    .razaDNI{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-14%, -50%);
+    }
+    .sexoDNI{
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-14%, -50%);
+    }
+    .nacimientoDNI{
+      position: absolute;
+      top: 63%;
+      left: 50%;
+      transform: translate(-14%, -50%);
+    }
+    .nacionDNI{
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-14%, -50%);
+    }
+    .numeroDNI{
+      position: absolute;
+      top: 90%;
+      left: 20%;
+      transform: translate(-14%, -50%);
+      font-size: 2.8vw;
+    }
+    .fotoDNI{
+      position: absolute;
+      padding-left: 0;
+      padding-top: 0.5%;
+      width: 27%;
+      height: 49%;
+      top: 52%;
+      left: 11%;
+      transform: translate(-11%, -50%);
+      overflow: hidden;
     }

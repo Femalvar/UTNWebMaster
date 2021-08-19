@@ -3,14 +3,20 @@
         <div class="container headerNav">
             <div class="row">
                     <div class="col-6 headerLogo">
-                        <img src="/images/header_logo.svg" alt="Huellitas.com">
+                        <a href="/">
+                            <img src="/images/header_logo.svg" alt="Huellitas.com">
+                        </a>
                     </div>
                     <div class="col-6 text-end pe-4">
-                        <a href="#login"><div class="btn btn-outline-light my-4 headerBt">
-                            su huellita
+                        <a href="" data-bs-toggle="modal" data-bs-target="#LoginModal"><div class="btn btn-outline-light my-4 headerBt">
+                            {{title}}
                         </div></a>
+                        {{!-- <button type="button" class="btn btn-outline-light border-dark m-2" data-bs-toggle="modal" data-bs-target="#RegistroModal">REGISTRO</button> --}}
                     </div>
             </div>
         </div>
     </div>
 </header>
+{{!-- 
+<button type="button" class="btn btn-outline-light border-dark m-2" data-bs-toggle="modal" data-bs-target="#RegistroModal">REGISTRO</button>
+                        <button type="button" class="btn btn-outline-light border-dark m-2"  data-bs-toggle="modal" data-bs-target="#LoginModal">INGRESAR</button> --}}
